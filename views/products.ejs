@@ -1,0 +1,19 @@
+<%- include('partials/header'); %>
+<h1><%= title %></h1>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% for(let i = 0; i < products.length; i++) { %>
+      <td><%= products[i].name %></td>
+      <td><%= products[i].price%></td>
+      <%} %>
+    </tr>
+  </tbody>
+</table>
+<%- include('partials/footer'); %>
